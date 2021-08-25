@@ -1,4 +1,10 @@
 export const types = `
+  type Result {
+    table: [Table]
+    count: Int
+    uniqueCountry: [String]
+    uniqueMFA: [String]
+  }
   type Table {
     First_Name: String
     Last_Name: String
@@ -16,7 +22,7 @@ export const types = `
   }
   input Filter {
     field: String
-    value: String
+    value: [String]
   }
   input Params {
     offset: Int
@@ -28,5 +34,5 @@ export const types = `
 `;
 
 export const queries = `
-  table(query: Params): [Table]
+  table(query: Params): Result
 `;

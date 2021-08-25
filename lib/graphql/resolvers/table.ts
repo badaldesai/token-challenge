@@ -1,6 +1,6 @@
 import { fetchTable } from '../../modules/report';
 import { Query } from '../../types/query';
-import { Table } from '../../types/report';
+import { Result } from '../../types/report';
 
 type ArgsQuery = {
 	query: Query
@@ -9,7 +9,7 @@ type ArgsQuery = {
 const table = (
 	_p: undefined,
 	_args: ArgsQuery,
-): Table[] => {
+): Result => {
 	const { query } = _args;
 	return fetchTable(query);
 };

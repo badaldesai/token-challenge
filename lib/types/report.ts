@@ -9,3 +9,10 @@ export type Table = {
     createdDate: string;
     ReferredBy: string | null;
 };
+
+export type Result = {
+    table: Table[],
+    uniqueCountry: string[],
+    uniqueMFA: string[],
+    count: number
+};
