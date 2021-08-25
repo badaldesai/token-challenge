@@ -189,8 +189,9 @@ class App extends React.Component {
               filterList: tableState.filterList,
               rowsPerPage: tableState.rowsPerPage,
               searchText: tableState.searchText
+            }, () => {
+              this.getData();
             });
-            this.getData();
             break;
           }
 
