@@ -176,7 +176,7 @@ class App extends React.Component {
       serverSide: true,
       count,
       rowsPerPage,
-      rowsPerPageOptions: [],
+      rowsPerPageOptions: [10, 20, 100],
       onTableChange: (action, tableState) => {
         console.log(action, tableState);
         switch (action) {
@@ -187,6 +187,7 @@ class App extends React.Component {
               page: tableState.page,
               sortOrder: tableState.sortOrder,
               filterList: tableState.filterList,
+              rowsPerPage: tableState.rowsPerPage,
               searchText: tableState.searchText
             });
             this.getData();
