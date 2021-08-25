@@ -195,18 +195,17 @@ class App extends React.Component {
 
       },
     };
-  console.log(data);
-  return (
-    <React.Fragment>
-    {this.state.isLoading && (
-      <div style={{ position: 'absolute', top: '50%', left: '50%' }}>
-        <CircularProgress />
-      </div>
-    )}
-    <MUIDataTable title={'Dashboard'} data={data} columns={columns} options={options} />
-  </React.Fragment>
-  );
-}
+    return (
+      <React.Fragment>
+        {this.state.isLoading && (
+          <div style={{ position: 'absolute', top: '50%', left: '50%' }}>
+            <CircularProgress />
+          </div>
+        )}
+        <MUIDataTable title={'Dashboard'} data={data} columns={columns} options={options} />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;

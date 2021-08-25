@@ -4,8 +4,9 @@
   "description": "Ledn Token Challenge",
   "main": "lib/index.js",
   "scripts": {
-    "start": "ts-node lib/index.ts",
+    "start-server": "ts-node lib/index.ts",
     "lint": "eslint . --ext .ts --fix",
+    "start-app": "cd app && npm run start",
     "test": "npm run test"
   },
   "repository": {
