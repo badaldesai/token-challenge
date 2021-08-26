@@ -2,9 +2,16 @@
 Ledn Token Challenge
 This involves Graphql server and React app.
 
+# Minimum Requirement
+Node version 12.0 and above install.
+
 # Start the server
 
 The graphql-express runs on the port on 8080 if there is no port number provided as env variable.
+To install the dependencies, you can run:
+```
+npm install
+```
 To start graphql server, you can run:
 ```
 npm run start-server
@@ -21,7 +28,12 @@ curl --location --request POST 'http://localhost:8080/graphql' \
 
 Make sure server is started before starting the app.
 The react app runs on the port on 3000 if there is no port number provided.
-To start the react app, you can run:
+To install the dependencies, you can run:
+```
+cd app
+npm install
+```
+To start the react app, you can run from the root directory:
 ```
 npm run start-app
 ```
